@@ -174,7 +174,7 @@ export default function AccountPage() {
                   type="tel"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  placeholder="+880 XXXXXXXXXX"
+                  placeholder="+91 XXXXXXXXXX"
                   className="w-full px-0 py-2.5 border-b border-[#E2E2E2] text-sm text-[#181725] outline-none focus:border-[#53B175] transition-colors bg-transparent placeholder-[#C0C0C0]"
                 />
               </div>

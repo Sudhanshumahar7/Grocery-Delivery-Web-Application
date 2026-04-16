@@ -16,8 +16,8 @@ interface Country {
 }
 
 const COUNTRIES: Country[] = [
-  { name: 'Bangladesh',     code: 'BD', dial: '+880', flag: '🇧🇩', digits: 10 },
   { name: 'India',          code: 'IN', dial: '+91',  flag: '🇮🇳', digits: 10 },
+  { name: 'Bangladesh',     code: 'BD', dial: '+880', flag: '🇧🇩', digits: 10 },
   { name: 'United States',  code: 'US', dial: '+1',   flag: '🇺🇸', digits: 10 },
   { name: 'United Kingdom', code: 'GB', dial: '+44',  flag: '🇬🇧', digits: 10 },
   { name: 'Pakistan',       code: 'PK', dial: '+92',  flag: '🇵🇰', digits: 10 },
