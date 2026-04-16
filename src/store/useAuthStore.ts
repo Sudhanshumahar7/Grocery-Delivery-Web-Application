@@ -61,8 +61,6 @@ export const useAuthStore = create<AuthState>()(
           id: 'u1',
           name: 'Afsar Hossen Shuvo',
           email,
-          zone: 'Banasree',
-          area: 'Block A',
         };
         set({
           user: mockUser,

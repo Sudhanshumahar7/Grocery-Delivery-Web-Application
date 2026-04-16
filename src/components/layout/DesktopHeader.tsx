@@ -8,6 +8,8 @@ import { useRouter } from 'next/navigation';
 
 export default function DesktopHeader() {
   const user = useAuthStore((s) => s.user);
+  const selectedZone = useAuthStore((s) => s.selectedZone);
+  const selectedArea = useAuthStore((s) => s.selectedArea);
   const itemCount = useCartStore((s) => s.itemCount());
   const searchQuery = useProductStore((s) => s.searchQuery);
   const setSearchQuery = useProductStore((s) => s.setSearchQuery);
@@ -20,13 +22,16 @@ export default function DesktopHeader() {
     }
   };
 
+  const displayZone = selectedZone || user?.zone || 'Select Location';
+  const displayArea = selectedArea || user?.area || '';
+
   return (
     <header className="hidden lg:flex items-center gap-4 px-6 py-3 bg-white border-b border-[#E2E2E2] sticky top-0 z-40">
       {/* Location */}
       <div className="flex items-center gap-1.5 text-sm text-[#181725] min-w-max">
         <span className="text-[#53B175]">📍</span>
         <span className="font-medium">
-          Dhaka, {user?.zone ?? 'Banasree'}
+          {displayZone}{displayArea ? `, ${displayArea}` : ''}
         </span>
       </div>
 
