@@ -63,8 +63,8 @@ export default function OnboardingPage() {
           onClick={() => router.push('/otp')}
           className="w-full flex items-center gap-3 border-2 border-[#E2E2E2] hover:border-[#53B175] rounded-2xl px-4 py-3.5 mb-5 transition-colors group"
         >
-          <span className="text-lg">🇧🇩</span>
-          <span className="text-sm text-[#7C7C7C] font-medium">+880</span>
+          <span className="text-lg">🇮🇳</span>
+          <span className="text-sm text-[#7C7C7C] font-medium">+91</span>
           <span className="text-sm text-[#7C7C7C] flex-1 text-left">Enter your mobile number</span>
           <svg className="w-4 h-4 text-[#7C7C7C] group-hover:text-[#53B175] transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
